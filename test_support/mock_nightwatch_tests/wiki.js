@@ -1,8 +1,8 @@
-var Test = require("../lib/example-base-test-class");
-
-module.exports = new Test({
-
+module.exports = {
   tags: ["wiki"],
+
+  beforeEach: function () {},
+  afterEach: function () {},
 
   "Test step one": function (client) {
     client
@@ -15,4 +15,4 @@ module.exports = new Test({
   }
 
 
-});
+};

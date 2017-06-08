@@ -15,7 +15,7 @@ describe("nightwatch support", function () {
 
     it("finds tests", function () {
       var tests = getTests();
-      expect(tests).to.have.length(3);
+      expect(tests).to.have.length(9);
     });
 
   });

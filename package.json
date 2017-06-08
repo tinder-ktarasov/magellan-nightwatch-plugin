@@ -1,6 +1,6 @@
 {
-  "name": "testarmada-magellan-nightwatch-plugin",
-  "version": "7.0.0",
+  "name": "custom-magellan-nightwatch-plugin",
+  "version": "7.0.0-custom-0.4",
   "description": "Magellan plugin to provide Nightwatch.js support",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TestArmada/magellan-nightwatch-plugin.git"
+    "url": "git+https://github.com/tinder-ktarasov/magellan-nightwatch-plugin.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TestArmada/magellan-nightwatch-plugin/issues"
+    "url": "https://github.com/tinder-ktarasov/magellan-nightwatch-plugin/issues"
   },
-  "homepage": "https://github.com/TestArmada/magellan-nightwatch-plugin#readme",
+  "homepage": "https://github.com/tinder-ktarasov/magellan-nightwatch-plugin#readme",
   "dependencies": {
     "acorn": "^4.0.4",
     "cli-color": "^1.1.0",

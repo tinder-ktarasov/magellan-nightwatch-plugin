@@ -18,7 +18,7 @@ describe("nightwatch support", function () {
       var tests = getTests();
       var filteredTests = groupFilter(tests, "test_support/mock_nightwatch_tests");
 
-      expect(filteredTests).to.have.length(3);
+      expect(filteredTests).to.have.length(9);
     });
 
     it("finds no tests with a group prefix that matches nothing", function () {
@@ -32,11 +32,11 @@ describe("nightwatch support", function () {
 
 
   describe("single test filter", function () {
-    it("finds a single exact test", function () {
+    it("finds a single exact test file (with 2 test cases in it)", function () {
       var tests = getTests();
       var filteredTests = singleFilter(tests, "test_support/mock_nightwatch_tests/search_mobile.js");
 
-      expect(filteredTests).to.have.length(1);
+      expect(filteredTests).to.have.length(2);
     });
 
     it("finds no test with exact single test filter if it one doesn't exist", function () {
@@ -54,14 +54,14 @@ describe("nightwatch support", function () {
       var tests = getTests();
       var filteredTests = tagFilter(tests, ["search"]);
 
-      expect(filteredTests).to.have.length(2);
+      expect(filteredTests).to.have.length(7);
     });
 
     it("finds fewer tests with a tag filter containing more matched tags", function () {
       var tests = getTests();
       var filteredTests = tagFilter(tests, ["search","mobile"]);
 
-      expect(filteredTests).to.have.length(1);
+      expect(filteredTests).to.have.length(2);
     });
 
     it("finds no tests with an unmatched tag filter containing some matching tags", function () {
